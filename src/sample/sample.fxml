@@ -1,0 +1,13 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<GridPane fx:controller="sample.Controller"
+          stylesheets="/sample/sample.css"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+            <Button text = "+1" onAction = "#addScore"/>
+            <Label GridPane.rowIndex="1" GridPane.columnSpan="10" fx:id="addScore"/>
+            <Button text = "-1" onAction = "#subtractScore"/>
+            <Label GridPane.rowIndex="2" GridPane.rowSpan="10" fx:id="subScore"/>
+</GridPane>
